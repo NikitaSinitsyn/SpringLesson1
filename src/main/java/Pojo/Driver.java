@@ -1,11 +1,16 @@
 package Pojo;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import java.util.Objects;
 
+@Component
 public class Driver {
     private String name;
     private Transport transport;
 
+    @Autowired
     public Driver(String name, Transport transport) {
         this.name = name;
         this.transport = transport;
